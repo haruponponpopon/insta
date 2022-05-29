@@ -24,7 +24,7 @@ Starting Metro Bundler
 というかんじの文言があるので`http://localhost:XXXXX`にアクセスしてください。
 こんな感じのページが開きます。
 <img width="1280" alt="スクリーンショット 2022-05-29 12 00 34" src="https://user-images.githubusercontent.com/72332745/170850055-1a7de0eb-0530-4368-9fa0-5782013002e9.png">
-Run in web browserをクリックして10行くらい待つとブラウザが勝手に立ちあがります。
+Run in web browserをクリックして10分くらい待つとブラウザが勝手に立ちあがります。
 # 中身
 こんな感じで画面遷移します
 <img width="1280" alt="スクリーンショット 2022-05-29 12 09 28" src="https://user-images.githubusercontent.com/72332745/170850282-937704f7-5138-4f97-87bb-137445306d8d.png">

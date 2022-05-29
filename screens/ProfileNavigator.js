@@ -6,6 +6,7 @@ import ProfileScreen from "../screens/ProfileScreen";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from "../screens/Home";
+import PostScreen from "../screens/PostScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -35,6 +36,11 @@ export default function AppNavigator() {
       options={{
           headerShown: false,
           tabBarIcon: () => (<Image source={require("../assets/human.png")} style={{width: 30, height: 30}} />)
+          }}/>
+          <Tab.Screen name="Post" component={PostScreen} 
+      options={{
+          headerShown: false,
+          tabBarIcon: () => (<Image source={require("../assets/camera.png")} style={{width: 30, height: 30}} />)
           }}/>
     </Tab.Navigator>
   );

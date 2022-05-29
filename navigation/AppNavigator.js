@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import FollowListScreen from "../screens/FollowListScreen";
 import ProfileScreen from "../screens/ProfileNavigator.js";
+import EmmaProfileScreen from "../screens/EmmaProfileScreen.js";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -34,10 +35,12 @@ export default function AppNavigator() {
         component={FollowListScreen}
         options={{headerTitle: title, headerTitleAlign: 'center'}}
         ></Stack.Screen>
-      </Stack.Navigator>
-      {/* <Tab.Navigator>
-      <Tab.Screen name="Profile" component={ProfileScreen}/>
-      </Tab.Navigator> */}
+      <Stack.Screen 
+        name="EmmaProfile" 
+        component={EmmaProfileScreen}
+        options={{headerTitle: title, headerTitleAlign: 'center'}}
+        ></Stack.Screen>
+        </Stack.Navigator>
     </NavigationContainer>
   );
 }

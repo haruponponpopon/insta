@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 //
-export default function App() {
+export default function App({navigation}) {
   return (
     <>
       <View style={styles.container}>
@@ -15,7 +15,7 @@ export default function App() {
           />
         </View>
         <View style={styles.followTextContainer}>
-          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Emma</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("EmmaProfile")}><Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Emma</Text></TouchableOpacity>
         </View>
         <View style={styles.followRightContainer}>
           <Text>✔️ フォロー中</Text>

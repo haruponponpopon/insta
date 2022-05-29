@@ -16,7 +16,7 @@ export default function App({navigation}) {
         </View>
       </View>
       <View style={styles.profile}>
-        <Text>Fashion Magazine Mercari Editor📖{"\n"}Travel account ✈︎✈︎✈︎🇸🇪KL with@annatravel{"\n"}🍰mercariofficial_2015
+        <Text>Fashion Magazine MofuMofu Editor📖{"\n"}Travel account ✈︎✈︎✈︎🇸🇪KL with@annatravel{"\n"}🍰mofumofuofficial_2015
         </Text>
       </View>
       <View style={styles.container}>
@@ -26,7 +26,7 @@ export default function App({navigation}) {
       </View>
       <View style={styles.group}>
         <View>
-          <Text>出品数{"\n"}30</Text>
+          <Text>出品数{"\n"}2</Text>
         </View>
         <View>
           <Text>フォロワー{"\n"}7</Text>

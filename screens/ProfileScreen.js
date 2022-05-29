@@ -4,112 +4,94 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, Touchable } from 'reac
 export default function App({navigation}) {
   return (
     <>
-      <View>
+      <View style={styles.home}>
         <View>
           <Image
             style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
-            source={{
-              uri: 'https://reactnative.dev/img/tiny_logo.png',
-            }}
+            source={require("../assets/icon4.jpeg")}
           />
         </View>
         <View>
-          <Text>hogehoge</Text>
+          <Text style={{alignItems: 'center', fontWeight: 'bold', fontSize: 18, color: "#303030", marginHorizontal: 10}}>Anna</Text>
         </View>
+      </View>
+      <View style={styles.profile}>
+        <Text>Fashion Magazine Mercari Editor📖{"\n"}Travel account ✈︎✈︎✈︎🇸🇪KL with@annatravel{"\n"}🍰mercariofficial_2015
+        </Text>
       </View>
       <View style={styles.container}>
         <View>
-          <Text style={{alignItems: 'center', fontWeight: 'bold', fontSize: 18, color: "#303030"}}>プロフィールを編集</Text>
+          <Text style={{alignItems: 'center', fontWeight: 'bold', fontSize: 14, color: "#303030"}}>プロフィールを編集</Text>
         </View>
       </View>
-      <View>
+      <View style={styles.group}>
         <View>
-          <Text>出品数</Text>
+          <Text>出品数{"\n"}30</Text>
         </View>
         <View>
-          <Text>フォロワー</Text>
+          <Text>フォロワー{"\n"}7</Text>
         </View>
         <View>
-          <TouchableOpacity onPress={() => navigation.navigate("FollowList")}><Text>フォロー中</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("FollowList")}><Text>フォロー中{"\n"}9</Text></TouchableOpacity>
         </View>
       </View>
+      <View style={styles.container_home}>
+            <View>
+                <Image
+                    style={{width: '100%', height: 300, alignItems: 'center'}}
+                    source={require("../assets/postImage4.jpeg")}
+                />
+            </View>
+            <View>
+                <Text>ワンピース ¥1000(税込)</Text>
+                <Text>旅行</Text>
+            </View>
+        </View>
     </>
   );
 }
 const styles = StyleSheet.create({
-  navBar: {
-    height: 60,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: 'white',
-    borderBottomColor: "#d0d0d0",
-    borderBottomWidth: 1,
-  },
-  leftContainer: {
-    flex: 1,
+  home: {
+    // flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    backgroundColor: 'white',
-  },
-  rightContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
     alignItems: 'center',
+    marginEnd: 0,
+    marginHorizontal: 10,
+    marginVertical: 10
   },
   container: {
-    height: 70,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    borderBottomColor: "#d0d0d0",
-    borderBottomWidth: 1,
+    borderColor: "#d0d0d0",
+    borderWidth: 1,
   },
-  followContainer: {
-    height: 70,
+  group: {
+    // flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    borderBottomColor: "#d0d0d0",
-    borderBottomWidth: 1,
+    marginHorizontal: 20,
+    marginVertical: 20,
   },
-  followLeftContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    // backgroundColor: 'red',
+  profile: {
+    marginHorizontal: 10,
+    marginVertical: 10,
   },
-  followTextContainer: {
+  navBar: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    // backgroundColor: 'red',
-  },
-  followRightContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
     alignItems: 'center',
-    borderColor: "#101010",
-    borderWidth: 1,
-    justifyContent: 'center',
-    borderRadius: 10,
+  //   backgroundColor: 'white',
+  //   borderBottomColor: "#d0d0d0",
+  //   borderBottomWidth: 1,
+    marginEnd: 0,
+    marginHorizontal: 10,
+    marginVertical: 10
   },
-  footerContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: 'white',
-    borderTopColor: "#d0d0d0",
-    borderTopWidth: 1,
-  },
-  footerComponent: {
-    width: 70,
-    height: 50,
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+  container_home: {
+      marginHorizontal: 10,
+      marginVertical: 20
+  }
 });

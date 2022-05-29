@@ -11,49 +11,128 @@ export default function App() {
         <View style={styles.followLeftContainer}>
           <Image
             style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
-            source={{
-              uri: 'https://reactnative.dev/img/tiny_logo.png',
-            }}
+            source={require("../assets/icon0.jpeg")}
           />
         </View>
         <View style={styles.followTextContainer}>
-          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>react</Text>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Emma</Text>
         </View>
         <View style={styles.followRightContainer}>
           <Text>✔️ フォロー中</Text>
         </View>  
       </View>
-      <View style={{height: 180}}></View>
-      {/* <View style={styles.footerContainer}>
-        <View style={styles.footerComponent}>
-        <Image
-            style={{width: 30, height: 30}}
-            source={require('../assets/home.png')}
-          />
-        <Text style={styles.footerText}>ホーム</Text>
-        </View>
-        <View style={styles.footerComponent}>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
           <Image
-              style={{width: 30, height: 30}}
-              source={require('../assets/bell.png')}
-            />
-          <Text style={styles.footerText}>お知らせ</Text>
-        </View>
-        <View style={styles.footerComponent}>
-        <Image
-            style={{width: 30, height: 30}}
-            source={require('../assets/camera.png')}
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon1.jpeg")}
           />
-        <Text style={styles.footerText}>出品</Text>
         </View>
-        <View style={styles.footerComponent}>
-        <Image
-            style={{width: 30, height: 30}}
-            source={require('../assets/human.png')}
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Olivia</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
+          <Image
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon2.jpeg")}
           />
-        <Text style={styles.footerText}>マイページ</Text>
         </View>
-      </View> */}
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Ava</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
+          <Image
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon3.jpeg")}
+          />
+        </View>
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Isabella</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
+          <Image
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon5.png")}
+          />
+        </View>
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Sophia</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
+          <Image
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon6.jpeg")}
+          />
+        </View>
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Charlotte</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
+          <Image
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon7.jpeg")}
+          />
+        </View>
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Mia</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
+          <Image
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon8.jpeg")}
+          />
+        </View>
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Amelia</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
+      <View style={styles.followContainer}>
+        <View style={styles.followLeftContainer}>
+          <Image
+            style={{width: 50, height: 50, alignItems: 'center', borderRadius: '50%'}}
+            source={require("../assets/icon9.jpeg")}
+          />
+        </View>
+        <View style={styles.followTextContainer}>
+          <Text style={{fontWeight: 600, fontSize: 18, color: "#303030"}}>Harper</Text>
+        </View>
+        <View style={styles.followRightContainer}>
+          <Text>✔️ フォロー中</Text>
+        </View>  
+      </View>
     </>
   );
 }
